@@ -1206,3 +1206,38 @@ img {
   }
 
 }
+/* =========================================
+   CORREÇÃO DOS CARDS DE PROJETO NO MOBILE
+   ========================================= */
+
+@media (max-width: 760px) {
+
+    .project-card {
+        height: auto;
+        min-height: auto;
+        padding: 28px;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .project-card .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-right: 0;
+    }
+
+    .project-card .tags span {
+        white-space: nowrap;
+    }
+
+    .project-link {
+        position: static;
+        display: flex;
+        margin-top: 22px;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+}
