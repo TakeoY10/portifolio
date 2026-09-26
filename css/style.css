@@ -1207,25 +1207,35 @@ img {
 
 }
 /* =========================================
-   CORREÇÃO DOS CARDS DE PROJETO NO MOBILE
+   CARDS DE PROJETOS - MOBILE
    ========================================= */
 
 @media (max-width: 760px) {
 
     .project-card {
         height: auto;
-        min-height: auto;
+        min-height: 0;
         padding: 28px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 
+    /* Conteúdo principal */
     .project-content {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
+    /* Tags */
     .project-card .tags {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
+        width: 100%;
+        margin-top: 20px;
         padding-right: 0;
     }
 
@@ -1233,11 +1243,19 @@ img {
         white-space: nowrap;
     }
 
+    /* Área exclusiva da seta */
     .project-link {
         position: static;
+
         display: flex;
-        margin-top: 22px;
-        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+
+        align-self: flex-end;
+
+        margin-top: 24px;
+        margin-left: 0;
+
         flex-shrink: 0;
     }
 }
