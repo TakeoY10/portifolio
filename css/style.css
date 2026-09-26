@@ -1212,7 +1212,8 @@ img {
 
 @media (max-width: 760px) {
 
-    .project-card {
+    .project-card,
+    .page-project-list .project-card {
         height: auto;
         min-height: 0;
         padding: 28px;
