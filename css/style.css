@@ -1216,20 +1216,11 @@ img {
         height: auto;
         min-height: 0;
         padding: 28px;
-
         display: flex;
         flex-direction: column;
         align-items: stretch;
     }
 
-    /* Conteúdo principal */
-    .project-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Tags */
     .project-card .tags {
         display: flex;
         flex-wrap: wrap;
@@ -1243,19 +1234,16 @@ img {
         white-space: nowrap;
     }
 
-    /* Área exclusiva da seta */
     .project-link {
         position: static;
-      border-top: 1px solid var(--border);
+        display: grid;
+        place-items: center;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        align-self: flex-end;
+        width: 40px;
+        height: 40px;
 
         margin-top: 24px;
-        margin-left: 0;
+        margin-left: auto;
 
         flex-shrink: 0;
     }
