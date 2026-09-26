@@ -1246,6 +1246,7 @@ img {
     /* Área exclusiva da seta */
     .project-link {
         position: static;
+      border-top: 1px solid var(--border);
 
         display: flex;
         align-items: center;
