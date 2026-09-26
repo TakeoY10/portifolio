@@ -746,9 +746,8 @@ img {
 
 .project-link {
     position: absolute;
-    top: 50%;
+    bottom: 25px;
     right: 25px;
-    transform: translateY(-50%);
 
     width: 40px;
     height: 40px;
@@ -763,7 +762,7 @@ img {
 .project-link:hover {
     background: var(--purple);
     color: white;
-    transform: translateY(-50%) rotate(-35deg);
+    transform: rotate(-35deg);
 }
 
 .contact-card {
@@ -1219,7 +1218,6 @@ img {
         height: auto;
         min-height: 0;
         padding: 28px;
-        padding-right: 90px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -1236,5 +1234,20 @@ img {
 
     .project-card .tags span {
         white-space: nowrap;
+    }
+
+    .project-link {
+        position: static;
+        transform: none;
+
+        width: 40px;
+        height: 40px;
+
+        margin-top: 18px;
+        margin-left: auto;
+    }
+
+    .project-link:hover {
+        transform: rotate(-35deg);
     }
 }
