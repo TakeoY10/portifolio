@@ -745,23 +745,25 @@ img {
 }
 
 .project-link {
-  position:absolute;
-  bottom:25px;
-  right:25px;
-  width:40px;
-  height:40px;
-  display:grid;
-  place-items:center;
-  border:1px solid var(--purple);
-  border-radius:50%;
-  color:var(--purple-light);
-  transition:var(--transition)
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--purple);
+    border-radius: 50%;
+    color: var(--purple-light);
+    transition: var(--transition);
 }
 
 .project-link:hover {
-  background:var(--purple);
-  color:white;
-  transform:rotate(-35deg)
+    background: var(--purple);
+    color: white;
+    transform: translateY(-50%) rotate(-35deg);
 }
 
 .contact-card {
@@ -1217,6 +1219,7 @@ img {
         height: auto;
         min-height: 0;
         padding: 28px;
+        padding-right: 90px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -1233,19 +1236,5 @@ img {
 
     .project-card .tags span {
         white-space: nowrap;
-    }
-
-    .project-link {
-        position: static;
-        display: grid;
-        place-items: center;
-
-        width: 40px;
-        height: 40px;
-
-        margin-top: 24px;
-        margin-left: auto;
-
-        flex-shrink: 0;
     }
 }
